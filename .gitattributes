@@ -1,2 +1,17 @@
 # Auto detect text files and perform LF normalization
 * text=auto
+
+
+1. Inicio de proyecto leyendo las instrucciones parta llevarlo a cabo
+
+2.
+ Iniciar proyeto en el atom realizando la programacion de la pagina principal 
+
+3. se inicia la realizacion del encabezado de la pagina principal
+4. se intenta realizar el menu dentro del header pero tengo complicaciones
+5. se realiza el menu de la pagina principal
+6. se monta la imagen central
+7. se monta las imagenes de los lados y se le coloca los detalles que pide el examen
+8. se hace el footer con las caracteristicas pedaidas
+9. inicio a trabajarn en la siguiente pestaña de paisajes. queda pendiente trabajar lo de responsive en la primera pagina de inicio.
+dejo la base de las 2 paginas, solo falta aplicar diseño responsive del proyecto
