@@ -12,6 +12,1221 @@
 5. se realiza el menu de la pagina principal
 6. se monta la imagen central
 7. se monta las imagenes de los lados y se le coloca los detalles que pide el examen
+
+sigueinte día
+
 8. se hace el footer con las caracteristicas pedaidas
 9. inicio a trabajarn en la siguiente pestaña de paisajes. queda pendiente trabajar lo de responsive en la primera pagina de inicio.
 dejo la base de las 2 paginas, solo falta aplicar diseño responsive del proyecto
+
+siguiente día
+
+se termina de montar el contenido de la base de la pagina 2 y se comienza con la tercera pagina
+
+se inicia a realizar ajustes y a colocarle el diseño responsie a la pagina 
+
+queda pendiente el responsive de la 2 fotos del medio y el footer.
+
+pendeinte consultar para termeinar por las dudas que se me presentaron.
+
+se inicia a verificar los errores que no me dejan terminar el proyecto
+
+se realiza ajustes, se pide asesoria en algunas areas que desconocia, se realiza en los siguientes dias ya que por el tiempo no se me posibilita de trabajarlo mas tienmpo en el día.
+se finaliza. quedo un detalle pendiente por corregir pero realizo la entrega del mismo.
+
+adjunto codigo
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no">
+    <meta name = "Autor" content ="Jonathan Andres Sanchez Guerra">
+    <title>proyecto css</title>
+    <link rel="stylesheet" href="css/estilos.css">
+  </head>
+
+  <body>
+      <section class="general">
+    <header>
+    	<h1>
+    		Comenzando con la Fotografia
+    	</h1>
+      <nav>
+		<ul>
+			<li><a href="index.html">Inicio </a></li>
+			<li> <a href="educacion.html">Paisajes</a></li>
+			<li><a href="experiencia.html">Retratos</a></li>
+	 </ul>
+	 </nav>
+    </header>
+
+    <section id="featured">
+        <figure id="imagen1">
+         <img class="adaptativa-porcentaje-1" src="image/imagen3.jpg"/>
+        </figure>
+      </section>
+      <section class="dos">
+        <div class="contenedor2">
+        <div id="imagen2" class="col1">
+          <img src="image/imagen1.jpg" class="imagen1">
+          <p>Paisajes</p>
+        </div>
+        <div id="imagen3" class="col2">
+          <img src="image/imagen17.jpg" class="imagen2">
+          <p>Retratos</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-container">
+        <div class="footer-main">
+
+          <div class="footer-columna">
+            <h3>Contacto</h3>
+              <p>Email: jandre206@hotmail.com</p>
+              <p>Dirección: Diagonal 48 No 17-63 Barrancabermeja, Colombia</p>
+              <p>Teléfono: 311 833 4698</p>
+          </div>
+
+          <div class="footer-columna">
+            <h3>Terminos</h3>
+              <p>Imagenes de representacion del modelo</p>
+          </div>
+
+          <div class="footer-columna">
+            <h3>Redes Sociales</h3>
+            <img src="image/facebook.png" width="20px" height="20px"/> <a href="https://www.facebook.com/jonathan.jasg"> facebook</a>
+      			<br><img src="image/twitter.png" width="20px" height="20px"/> <a href="https://twitter.com/jandre206">twitter</a>
+      			<br><img src="image/youtube.png" width="20px" height="20px"/> <a href="https://www.youtube.com/channel/UCsy-S3k06res03KzRHx4PQg?view_as=subscriber">youtube</a>
+          </div>
+
+          <div class="footer-columna">
+              <h3>Derechos</h3>
+              &copy; Jonathan Andres Sanchez Guerra, 2018
+          </div>
+
+      </div>
+    </div>
+
+    </footer>
+  </section>
+  </body>
+
+</html>
+
+y css de la pagina de inicio
+
+@media (min-width: 150px) {
+	header {
+		padding: 1vh 1vw;
+		margin-bottom: 0;
+		border-radius: 10px 10px 0px 0px;
+		background-color: #5b7989;
+	  display:flex;
+		flex-direction: column;
+		width: 98%;
+		font-family: "Dancing Script";
+		  }
+
+	h1{
+	  color: white;
+	  text-shadow: 2px 2px 2px #02010a;
+		text-align: center;
+		font-family: "Dancing Script";
+	}
+
+	nav {
+	  float: center;
+	}
+
+	nav ul {
+	  list-style: none;
+	  overflow: hidden; /* Limpiamos errores de float */
+	}
+
+	nav ul li {
+	  float: left;
+	 font-family: "Dancing Script";
+	  font-size: 1.2em;
+		text-align: center;
+	}
+
+	nav ul li a {
+	  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	  padding: 10px;
+	  color: #f9f7f9;
+	  text-decoration: none;
+	}
+
+	nav ul li:hover {
+	  background: #7a8ea8;
+	}
+
+	body{
+	  background-color: black;
+		min-height: 100vh;
+	  width: 100%; margin: 0 auto;
+		}
+
+	#featured {
+		margin-bottom: 0;
+		overflow: hidden;
+		padding: 0px 0px;
+		width: 100%;
+		background: #82c3a6;
+		}
+
+		#contenido{
+			margin-bottom: 2em;
+			overflow: hidden;
+			padding: 20px 20px;
+			margin: 0;
+			width: 96%;
+			background: #d5c75f;
+			display:column;
+			border: 1px;
+			text-align: center;
+			}
+
+	  #imagen1 img{
+	    background-color: #82c3a6;
+		  width:100%;
+	    text-align: center;
+			flex: initial;
+	  }
+		.adaptativa-porcentaje-1{
+			width: 100%;
+			display: column;
+			flex-direction: row;
+			border: 1px solid;
+		}
+		.contenedor {
+			display: flex;
+			-webkit-flex-flow: row wrap;
+			flex-flow: row wrap;
+			width: 100%;
+			}
+		.contenedor > div {
+			text-align: center;
+			padding: 1px;
+			margin: 10px;
+			width: 50%;
+			background-color: #d5c75f;
+		}
+
+	 #imagen2 img{
+	 		transition-duration: 0.5s;
+
+	 	}
+
+2da parte del proyecto pagina paisajes 
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta name = "Autor" content ="Jonathan Andres Sanchez Guerra">
+  <title>proyecto css</title>
+  <link rel="stylesheet" href="css/estilos2.css">
+</head>
+<body>
+  <section class="featured">
+  <header>
+    <h1>
+      Comenzando con los Paisajes
+    </h1>
+  <nav>
+    <ul>
+     <li><a href="index.html">Inicio </a></li>
+     <li><a href="educacion.html">Paisajes</a></li>
+     <li><a href="experiencia.html">Retratos</a></li>
+    </ul>
+  </nav>
+  </header>
+
+  <section class="dos">
+    <div class="contenedor2">
+      <div id="imagen5" class="col1" style="margin: auto;">
+       <img src="image/imagen5.png" class="imagen5">
+      </div>
+      <div id="imagen6" class="col2" style="margin: auto;">
+       <img src="image/imagen6.png" class="imagen6">
+      </div>
+      <div id="imagen7" class="col3" style="margin: auto;">
+       <img src="image/imagen7.png" class="imagen7">
+      </div>
+    </div>
+  </section>
+
+  <section class="tres">
+    <div class="contenedor3">
+      <div id="imagen8" class="col4" style="margin: auto;">
+       <img src="image/imagen8.png" class="imagen8">
+      </div>
+       <div id="imagen9" class="col5" style="margin: auto;">
+       <img src="image/imagen9.png" class="imagen9">
+      </div>
+       <div id="imagen10" class="col6" style="margin: auto;">
+       <img src="image/imagen10.png" class="imagen10">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main">
+
+        <div class="footer-columna">
+          <h3>Contacto</h3>
+            <p>Email: jandre206@hotmail.com</p>
+            <p>Dirección: Diagonal 48 No 17-63 Barrancabermeja, Colombia</p>
+            <p>Teléfono: 311 833 4698</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Terminos</h3>
+            <p>Imagenes de representacion del modelo</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Redes Sociales</h3>
+          <img src="image/facebook.png" width="20px" height="20px"/> <a href="https://www.facebook.com/jonathan.jasg"> facebook</a>
+          <br><img src="image/twitter.png" width="20px" height="20px"/> <a href="https://twitter.com/jandre206">twitter</a>
+          <br><img src="image/youtube.png" width="20px" height="20px"/> <a href="https://www.youtube.com/channel/UCsy-S3k06res03KzRHx4PQg?view_as=subscriber">youtube</a>
+        </div>
+
+        <div class="footer-columna">
+            <h3>Derechos</h3>
+            &copy; Jonathan Andres Sanchez Guerra, 2018
+        </div>
+
+    </div>
+  </div>
+
+  </footer>
+</section>
+</body>
+</html>
+
+
+	 	#imagen2 img:hover{
+			transform: rotate(10deg);
+			box-shadow: 20px 20px #82c3a6;
+			border: 2px solid white;
+			}
+
+		#imagen3 img{
+	  		transition-duration: 0.5s;
+				}
+
+	  	#imagen3 img:hover{
+	 		transform: translate(20px, -5px);
+			box-shadow: 20px 5px #82c3a6;
+			border: 2px solid white;
+			}
+
+			footer {
+			 width: 100%;
+			 font-family: "Dancing Script";
+			 margin: 0;
+			 padding:0;
+			 display: flex;
+			 display: webkit-flex;
+			 background-color:#C6d5c5;
+			 border-radius: 0 0 10px 10px;
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			}
+
+		 .footer-container{
+			 width: 100%;
+			 background:#C6d5c5;
+			 color: #ff52;
+			 border-radius: 0 0 10px 10px;
+		 }
+		 .footer-main{
+			 width: 98%;
+			 max-width: 98%;
+			 margin: 0;
+			 padding: 25px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 display: column;
+		 }
+	.footer-main .footer-columna{
+
+		text-align: left;
+		display: column;
+		font-size: 0.9em;
+		color:black
+		}
+	.footer-main .footer-columna:nth-child(3){
+		padding: 0 25px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.5em;
+		color:  #02010a;
+		margin-bottom: 25px;
+		padding: 5 25px;
+	}
+}
+
+@media (min-width: 900px) {
+	header {
+		padding: 1vh 1vw;
+		margin-bottom: 0;
+		border-radius: 10px 10px 0px 0px;
+		background-color: #5b7989;
+	  display:flex;
+		width: auto;
+		font-family: "Dancing Script";
+		  }
+
+	h1{
+	  color: white;
+	  text-shadow: 2px 2px 2px #02010a;
+		text-align: left;
+		font-family: "Dancing Script";
+	}
+
+	nav {
+	  float: right;
+	}
+
+	nav ul {
+	  list-style: none;
+	  overflow: hidden; /* Limpiamos errores de float */
+	}
+
+	nav ul li {
+	  float: right;
+	  font-family: Arial, sans-serif;
+	  font-size: 16px;
+	}
+
+	nav ul li a {
+	  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	  padding: 20px;
+	  color: #f9f7f9;
+	  text-decoration: none;
+	}
+
+	nav ul li:hover {
+	  background: #7a8ea8;
+	}
+
+	body{
+	  background-color: black;
+		min-height: 100vh;
+	  width: 90%; margin: 0 auto;
+		}
+
+	#featured {
+		margin-bottom: 0;
+		overflow: hidden;
+		padding: 20px 20px;
+		width: 96%;
+		background: #82c3a6;
+		}
+
+		#contenido{
+			margin-bottom: 2em;
+			overflow: hidden;
+			padding: 20px 20px;
+			margin: 0;
+			width: 96%;
+			background: #d5c75f;
+			display:column;
+			border: 1px;
+			text-align: center;
+			}
+
+	  #imagen1 img{
+	    background-color: #82c3a6;
+		  width:100%;
+	    text-align: center;
+			flex: initial;
+	  }
+		.adaptativa-porcentaje-1{
+			width: 100%;
+			display: column;
+			flex-direction: row;
+			border: 1px solid;
+		}
+		.contenedor {
+			webkit-flex;
+			display: column;
+			-webkit-flex-flow: row wrap;
+			flex-flow: rowv wrap;
+			width: 100%;
+			}
+		.contenedor > div {
+			text-align: center;
+			padding: 1px;
+			margin: 10px;
+			width: 50%;
+			background-color: #d5c75f;
+		}
+
+	 #imagen2 img{
+	 		transition-duration: 0.5s;
+	 	}
+
+	 	#imagen2 img:hover{
+			transform: rotate(10deg);
+			box-shadow: 20px 5px #82c3a6;
+			border: 2px solid white;
+			}
+
+		#imagen3 img{
+	  		transition-duration: 0.5s;
+				}
+
+	  	#imagen3 img:hover{
+	 		transform: translate(20px, -5px);
+			box-shadow: 20px 5px #82c3a6;
+			border: 2px solid white;
+			}
+
+			footer {
+			 width: 100%;
+			 font-family: "Dancing Script";
+			 margin: 0;
+			 padding:0;
+			 display: flex;
+			 display: webkit-flex;
+			 background-color:#C6d5c5;
+			 border-radius: 0 0 10px 10px;
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			}
+
+		 .footer-container{
+			 width: 100%;
+			 background:#C6d5c5;
+			 color: #ff52;
+			 border-radius: 0 0 10px 10px;
+		 }
+		 .footer-main{
+			 width: 98%;
+			 max-width: 98%;
+			 margin: 0;
+			 padding: 25px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 display: column;
+		 }
+	.footer-main .footer-columna{
+
+		text-align: left;
+		display: column;
+		font-size: 0.9em;
+	  color:black
+		}
+	.footer-main .footer-columna:nth-child(3){
+		padding: 0 25px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.5em;
+		color:  #02010a;
+		margin-bottom: 25px;
+		padding: 5 25px;
+	}
+}
+/*Este es lo que le agregue*/
+.dos{
+  background-color: #d5c75f;
+}
+.imagen2,.imagen1{
+  width: 75%;
+  height: 80%;
+  box-shadow: 2px 2px 2px black;
+}
+.contenedor2{
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+  color: black;
+  padding:50px 0 40px 0;
+}
+.general{
+	width: 80%;
+	margin: auto;
+}
+@media (max-width:600px) {
+  .contenedor2{
+    display: flex;
+    flex-direction:column;
+  }
+}
+
+css de esta pagina 
+
+@media (min-width: 150px) {
+ header {
+	padding: 1vh 1vw;
+	margin-bottom: 0;
+	border-radius: 10px 10px 0px 0px;
+	background-color: #5b7989;
+	display:flex;
+	flex-direction: column;
+	width: 98%;
+	font-family: "Dancing Script";
+		}
+
+h1{
+	color: white;
+	text-shadow: 2px 2px 2px #02010a;
+	text-align: center;
+	font-family: "Dancing Script";
+}
+
+nav {
+	float: right;
+	}
+
+nav ul {
+	list-style: none;
+	overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+	float: left;
+ font-family: "Dancing Script";
+	font-size: 1.1em;
+	text-align: center;
+}
+
+nav ul li a {
+	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	padding: 10px;
+	color: #f9f7f9;
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background: #7a8ea8;
+}
+
+	body{
+		background-color: black;
+		min-height: 100vh;
+		width: 100%; margin: 0 auto;
+		}
+
+		#contenido {
+			margin-bottom: 0;
+			overflow: hidden;
+			padding: 20px 20px;
+			width: 96%;
+			background: #82c3a6;
+			}
+
+			.contenedores {
+				display: flex;
+				flex-direction: row;
+
+			}
+			.contenedores > div {
+				text-align: center;
+				padding: 1px;
+				margin: 20px;
+				width: 100%;
+				background-color: #fff;
+			}
+			footer {
+			 width: 100%;
+			 font-family: "Dancing Script";
+			 margin: 0;
+			 padding:0;
+			 display: flex;
+			 display: webkit-flex;
+			 background-color:#C6d5c5;
+			 border-radius: 0 0 10px 10px;
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			}
+
+		 .footer-container{
+			 width: 100%;
+			 background:#C6d5c5;
+			 color: #ff52;
+			 border-radius: 0 0 10px 10px;
+		 }
+		 .footer-main{
+			 width: 98%;
+			 max-width: 98%;
+			 margin: 0;
+			 padding: 25px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 display: column;
+		 }
+	.footer-main .footer-columna{
+
+		text-align: left;
+		display: column;
+		font-size: 0.9em;
+		color:black
+		}
+	.footer-main .footer-columna:nth-child(3){
+		padding: 0 25px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.5em;
+		color:  #02010a;
+		margin-bottom: 25px;
+		padding: 5 25px;
+	}
+}
+
+		#imagen5 img{
+			-webkit-filter: blur(10px);
+			filter: blur(10%);
+		}
+		#imagen6 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen8 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen10 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen9 img{
+			-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+			filter: sepia(90%);
+		  }
+		}
+
+		@media (min-width: 900px) {
+			header {
+				padding: 1vh 1vw;
+				margin-bottom: 0;
+				border-radius: 10px 10px 0px 0px;
+				background-color: #5b7989;
+			  display:flex;
+				width: auto;
+				font-family: "Dancing Script";
+				  }
+
+			h1{
+			  color: white;
+			  text-shadow: 2px 2px 2px #02010a;
+				text-align: left;
+				font-family: "Dancing Script";
+			}
+
+			nav {
+			  float: right;
+			}
+
+			nav ul {
+			  list-style: none;
+			  overflow: hidden; /* Limpiamos errores de float */
+			}
+
+			nav ul li {
+			  float: right;
+			  font-family: Arial, sans-serif;
+			  font-size: 16px;
+			}
+
+			nav ul li a {
+			  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+			  padding: 20px;
+			  color: #f9f7f9;
+			  text-decoration: none;
+			}
+
+			nav ul li:hover {
+			  background: #7a8ea8;
+			}
+
+			body{
+			  background-color: black;
+				min-height: 100vh;
+			  width: 100%; margin: 0 auto;
+				}
+
+			footer {
+			 width: 100%;
+			 font-family: "Dancing Script";
+			 margin: 0;
+			 padding:0;
+			 display: flex;
+			 display: webkit-flex;
+			 background-color:#C6d5c5;
+			 border-radius: 0 0 10px 10px;
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			}
+
+		 .footer-container{
+			 width: 100%;
+			 background:#C6d5c5;
+			 color: #ff52;
+			 border-radius: 0 0 10px 10px;
+		 }
+		 .footer-main{
+			 width: 98%;
+			 max-width: 98%;
+			 margin: 0;
+			 padding: 25px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 display: column;
+		 }
+	.footer-main .footer-columna{
+
+		text-align: left;
+		display: column;
+		font-size: 0.9em;
+	  color:black
+		}
+	.footer-main .footer-columna:nth-child(3){
+		padding: 0 25px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.5em;
+		color:  #02010a;
+		margin-bottom: 25px;
+		padding: 5 25px;
+	}
+}
+		#imagen5 img{
+			-webkit-filter: blur(10px);
+			filter: blur(10%);
+		}
+		#imagen6 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen8 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen10 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen9 img{
+			-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+			filter: sepia(90%);
+		  }
+		}
+		/*Este es lo que le agregue*/
+		.dos,.tres{
+		  background-color: #d5c75f;
+			}
+		.imagen5,.imagen6,.imagen7,.imagen8,.imagen9,.imagen10{
+		  width: 75%;
+		  height: 80%;
+		  box-shadow: 2px 2px 2px black;
+			}
+		.contenedor2,.contenedor3{
+		  display: flex;
+		  flex-direction:row;
+		  text-align: center;
+		  color: black;
+		  padding:50px 0 20px 0;
+			margin: 0px;
+			width: 100%;
+			background-color: #d5c75f;
+		}
+		.featured{
+			width:80%;
+			margin: auto;
+		}
+		@media (max-width:600px) {
+		  .contenedor2,.contenedor3{
+		    display: flex;
+		    flex-direction:column;
+			 }
+		}
+
+tercera pagina  rostros
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no">
+  <meta name = "Autor" content ="Jonathan Andres Sanchez Guerra">
+  <title>proyecto css</title>
+  <link rel="stylesheet" href="css/estilos3.css">
+</head>
+<body>
+  <section class="featured">
+  <header>
+    <h1>
+      Comenzando con los Paisajes
+    </h1>
+    <nav>
+  <ul>
+    <li><a href="index.html">Inicio </a></li>
+    <li><a href="educacion.html">Paisajes</a></li>
+    <li><a href="experiencia.html">Retratos</a></li>
+ </ul>
+ </nav>
+  </header>
+
+  <section class="dos">
+    <div class="contenedor2">
+      <div id="imagen11" class="col1" style="margin: auto;">
+       <img src="image/imagen11.jpg" class="imagen11">
+      </div>
+      <div id="imagen12" class="col2" style="margin: auto;">
+       <img src="image/imagen12.jpg" class="imagen12">
+      </div>
+      <div id="imagen13" class="col3" style="margin: auto;">
+       <img src="image/imagen13.jpg" class="imagen13">
+      </div>
+    </div>
+  </section>
+
+  <section class="tres">
+    <div class="contenedor3">
+      <div id="imagen14" class="col4" style="margin: auto;">
+       <img src="image/imagen14.jpg" class="imagen14">
+      </div>
+       <div id="imagen15" class="col5" style="margin: auto;">
+       <img src="image/imagen15.jpg" class="imagen15">
+      </div>
+       <div id="imagen16" class="col6" style="margin: auto;">
+       <img src="image/imagen16.jpg" class="imagen16">
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-container">
+      <div class="footer-main">
+
+        <div class="footer-columna">
+          <h3>Contacto</h3>
+            <p>Email: jandre206@hotmail.com</p>
+            <p>Dirección: Diagonal 48 No 17-63</p>
+            <br><p>Barrancabermeja, Colombia</p>
+            <p>Teléfono: 311 833 4698</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Terminos</h3>
+            <p>Imagenes de representacion del modelo</p>
+        </div>
+
+        <div class="footer-columna">
+          <h3>Redes Sociales</h3>
+          <img src="image/facebook.png" width="20px" height="20px"/> <a href="https://www.facebook.com/jonathan.jasg"> facebook</a>
+          <br><img src="image/twitter.png" width="20px" height="20px"/> <a href="https://twitter.com/jandre206">twitter</a>
+          <br><img src="image/youtube.png" width="20px" height="20px"/> <a href="https://www.youtube.com/channel/UCsy-S3k06res03KzRHx4PQg?view_as=subscriber">youtube</a>
+        </div>
+
+        <div class="footer-columna">
+            <h3>Derechos</h3>
+            &copy; Jonathan Andres Sanchez Guerra, 2018
+        </div>
+
+    </div>
+  </div>
+
+  </footer>
+  </section>
+ </body>
+</html>
+
+css de esta pagina 
+
+@media (min-width: 150px) {
+	header {
+		padding: 1vh 1vw;
+		margin-bottom: 0;
+		border-radius: 10px 10px 0px 0px;
+		background-color: #5b7989;
+	  display:flex;
+		flex-direction: column;
+		width: 98%;
+		font-family: "Dancing Script";
+		  }
+
+	h1{
+	  color: white;
+	  text-shadow: 2px 2px 2px #02010a;
+		text-align: center;
+		font-family: "Dancing Script";
+	}
+
+	nav {
+	  float: center;
+	}
+
+	nav ul {
+	  list-style: none;
+	  overflow: hidden; /* Limpiamos errores de float */
+	}
+
+	nav ul li {
+	  float: left;
+	 font-family: "Dancing Script";
+	  font-size: 1.2em;
+		text-align: center;
+	}
+
+	nav ul li a {
+	  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	  padding: 10px;
+	  color: #f9f7f9;
+	  text-decoration: none;
+	}
+
+	nav ul li:hover {
+	  background: #7a8ea8;
+	}
+
+	body{
+		background-color: black;
+		min-height: 100vh;
+		width: 100%; margin: 0 auto;
+		}
+
+		#contenido {
+			margin-bottom: 0;
+			overflow: hidden;
+			padding: 20px 20px;
+			width: 96%;
+			background: #82c3a6;
+			}
+
+			.contenedores {
+				display: flex;
+				flex-direction: row;
+
+			}
+			.contenedores > div {
+				text-align: center;
+				padding: 1px;
+				margin: 20px;
+				width: 100%;
+				background-color: #fff;
+			}
+			footer {
+			 width: 100%;
+			 font-family: "Dancing Script";
+			 margin: 0;
+			 padding:0;
+			 display: flex;
+			 display: webkit-flex;
+			 background-color:#C6d5c5;
+			 border-radius: 0 0 10px 10px;
+			 -webkit-box-sizing: border-box;
+			 -moz-box-sizing: border-box;
+			 box-sizing: border-box;
+			}
+
+		 .footer-container{
+			 width: 100%;
+			 background:#C6d5c5;
+			 color: #ff52;
+			 border-radius: 0 0 10px 10px;
+		 }
+		 .footer-main{
+			 width: 98%;
+			 max-width: 98%;
+			 margin: 0;
+			 padding: 25px;
+			 display: flex;
+			 flex-wrap: wrap;
+			 display: column;
+		 }
+	.footer-main .footer-columna{
+
+		text-align: left;
+		display: column;
+		font-size: 0.9em;
+		color:black
+		}
+	.footer-main .footer-columna:nth-child(3){
+		padding: 0 25px;
+	}
+	.footer-main .footer-columna h3{
+		font-size: 1.5em;
+		color:  #02010a;
+		margin-bottom: 25px;
+		padding: 5 25px;
+	}
+}
+		#imagen11 img{
+			-webkit-filter: blur(10px);
+			filter: blur(10%);
+		}
+		#imagen12 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen16 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen14 img{
+			-webkit-filter: grayscale(100%);
+			filter: grayscale(100%);
+		}
+		#imagen13 img{
+			-webkit-filter: sepia(90%); /* Chrome, Safari, Opera */
+			filter: sepia(90%);
+		  }
+	}
+	@media (min-width: 900px) {
+		header {
+			padding: 1vh 1vw;
+			margin-bottom: 0;
+			border-radius: 10px 10px 0px 0px;
+			background-color: #5b7989;
+		  display:flex;
+			width: auto;
+			font-family: "Dancing Script";
+			  }
+
+		h1{
+		  color: white;
+		  text-shadow: 2px 2px 2px #02010a;
+			text-align: left;
+			font-family: "Dancing Script";
+		}
+
+		nav {
+		  float: right;
+		}
+
+		nav ul {
+		  list-style: none;
+		  overflow: hidden; /* Limpiamos errores de float */
+		}
+
+		nav ul li {
+		  float: right;
+		  font-family: Arial, sans-serif;
+		  font-size: 16px;
+		}
+
+		nav ul li a {
+		  display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+		  padding: 20px;
+		  color: #f9f7f9;
+		  text-decoration: none;
+		}
+
+		nav ul li:hover {
+		  background: #7a8ea8;
+		}
+		body{
+			background-color: black;
+			min-height: 100vh;
+			width: 100%; margin: 0 auto;
+			}
+	#contenido {
+		margin-bottom: 0;
+		overflow: hidden;
+		padding: 20px 20px;
+		width: 96%;
+		background: #82c3a6;9
+		}
+
+		.contenedores {
+			display: flex;
+			flex-direction: row;
+
+		}
+		.contenedores > div {
+			text-align: center;
+			padding: 1px;
+			margin: 20px;
+			width: 100%;
+			background-color: #fff;
+		}
+		footer {
+		 width: 100%;
+		 font-family: "Dancing Script";
+		 margin: 0;
+		 padding:0;
+		 display: flex;
+		 display: webkit-flex;
+		 background-color:#C6d5c5;
+		 border-radius: 0 0 10px 10px;
+		 -webkit-box-sizing: border-box;
+		 -moz-box-sizing: border-box;
+		 box-sizing: border-box;
+		}
+
+	 .footer-container{
+		 width: 100%;
+		 background:#C6d5c5;
+		 color: #ff52;
+		 border-radius: 0 0 10px 10px;
+	 }
+	 .footer-main{
+		 width: 98%;
+		 max-width: 98%;
+		 margin: 0;
+		 padding: 25px;
+		 display: flex;
+		 flex-wrap: wrap;
+		 display: column;
+	 }
+.footer-main .footer-columna{
+
+	text-align: left;
+	display: column;
+	font-size: 0.9em;
+	color:black
+	}
+.footer-main .footer-columna:nth-child(3){
+	padding: 0 25px;
+}
+.footer-main .footer-columna h3{
+	font-size: 1.5em;
+	color:  #02010a;
+	margin-bottom: 25px;
+	padding: 5 25px;
+}
+}
+/*Este es lo que le agregue*/
+.dos,.tres{
+	background-color: #d5c75f;
+	}
+.imagen11,.imagen12,.imagen13,.imagen14,.imagen15,.imagen16{
+	width: 75%;
+	height: 80%;
+	box-shadow: 2px 2px 2px black;
+	}
+.contenedor2,.contenedor3{
+	display: flex;
+	flex-direction:row;
+	text-align: center;
+	color: black;
+	padding:50px 0 20px 0;
+	margin: 0px;
+	width: 100%;
+	background-color: #d5c75f;
+}
+.featured{
+	width:80%;
+	margin: auto;
+}
+@media (max-width:600px) {
+	.contenedor2,.contenedor3{
+		display: flex;
+		flex-direction:column;
+	 }
+}
+
+	
